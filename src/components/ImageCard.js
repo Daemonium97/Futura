@@ -4,8 +4,10 @@ import Card from '@material-ui/core/Card';
 
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
+import { CardActions, Button} from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 import { Collapse } from '@material-ui/core';
+
 
 const useStyles = makeStyles({
   root: {
@@ -57,6 +59,9 @@ export default function ImageCard({ place, checked }) {
           >
             {place.description}
           </Typography>
+          <CardActions>
+            <Button variant="contained" href={place.link} target="_blank">Go to </Button>
+          </CardActions>
         </CardContent>
       </Card>
     </Collapse>

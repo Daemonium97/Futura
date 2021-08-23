@@ -6,6 +6,7 @@ import {
   Toolbar,
   Collapse,
   Typography,
+  Grid,
 } from "@material-ui/core";
 import PetsIcon from "@material-ui/icons/Pets";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
@@ -42,15 +43,11 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     color: "black",
-    fontSize: "4.5rem",
+    fontSize: "3.5rem",
   },
   goDown: {
     color: "#5AFF3D",
     fontSize: "4rem",
-  },
-  body: {
-    fontSize: 20
-   
   },
 }));
 export default function Header() {
@@ -79,14 +76,16 @@ export default function Header() {
         collapsedHeight={50}
       >
         <div className={classes.container}>
-          <h1 className={classes.title}>
-            Welcome to <br />
-            <span className={classes.colorText}>PixelAlive.</span>
-          </h1>
-          <Typography className={classes.body} variant="body1">
-            En PixelAlive nos gusta crear páginas que llamen la atención,
-            ofrecemos menús para restaurantes o páginas personalizadas.
-          </Typography>
+          <Grid item xs={12}>
+            <h1 className={classes.title}>
+              Welcome to <br />
+              <span className={classes.colorText}>PixelAlive.</span>
+            </h1>
+            <Typography variant="h6" align="center" paragraph>
+              En PixelAlive nos gusta crear páginas que llamen la atención,
+              ofrecemos menús para restaurantes o páginas personalizadas.
+            </Typography>
+          </Grid>
 
           <Scroll to="bears-gallery" smooth={true}>
             <IconButton>
