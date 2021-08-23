@@ -4,6 +4,7 @@ import { CssBaseline } from '@material-ui/core';
 import Header from './components/Header';
 import PlaceToVisit from './components/BearShow';
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     minHeight: '100vh',
@@ -19,6 +20,7 @@ export default function App() {
       <CssBaseline />
       <Header />
       <PlaceToVisit />
+      
       
      
     </div>

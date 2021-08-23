@@ -8,7 +8,6 @@ import {
   Typography,
   Grid,
 } from "@material-ui/core";
-import PetsIcon from "@material-ui/icons/Pets";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Link as Scroll } from "react-scroll";
 import logo from '../components/logoB.png'
@@ -50,6 +49,9 @@ const useStyles = makeStyles((theme) => ({
     color: "#5AFF3D",
     fontSize: "4rem",
   },
+  para:{
+    fontFamily: "Nunito"
+  }
 }));
 export default function Header() {
   const classes = useStyles();
@@ -83,7 +85,7 @@ export default function Header() {
               Welcome to <br />
               <span className={classes.colorText}>PixelAlive.</span>
             </h1>
-            <Typography variant="h6" align="center" paragraph>
+            <Typography className={classes.para} variant="h6" align="center" paragraph>
               En PixelAlive nos gusta crear páginas que llamen la atención,
               ofrecemos menús para restaurantes o páginas personalizadas.
             </Typography>
