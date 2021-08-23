@@ -11,6 +11,7 @@ import {
 import PetsIcon from "@material-ui/icons/Pets";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Link as Scroll } from "react-scroll";
+import logo from '../components/logoB.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -33,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   },
   icon: {
     color: "#fff",
-    fontSize: "2rem",
+    height:'40px',
   },
   colorText: {
     color: "#2BB965",
@@ -60,12 +61,13 @@ export default function Header() {
     <div className={classes.root} id="header">
       <AppBar className={classes.appbar} elevation={0}>
         <Toolbar className={classes.appbarWrapper}>
+          
           <h1 className={classes.appbarTitle}>
             Pixel<span className={classes.colorText}>Alive.</span>
           </h1>
 
           <IconButton>
-            <PetsIcon className={classes.icon} />
+            <img className={classes.icon} src={logo} alt="PixelAlive"/>
           </IconButton>
         </Toolbar>
       </AppBar>
