@@ -18,11 +18,11 @@ export default function () {
   const classes = useStyles();
   const checked = useWindowPosition("header");
   return (
+    
     <div className={classes.root} id="bears-gallery">
       <ImageCard place={bears[0]} checked={checked} />
       <ImageCard place={bears[1]} checked={checked} />
-      <ImageCard place={bears[2]} checked={checked} />
-      <ImageCard place={bears[3]} checked={checked} />
+      
     </div>
   );
 }

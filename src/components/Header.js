@@ -1,47 +1,56 @@
-import React, { useEffect, useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, IconButton, Toolbar, Collapse } from '@material-ui/core';
-import PetsIcon from '@material-ui/icons/Pets';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { Link as Scroll } from 'react-scroll';
+import React, { useEffect, useState } from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import {
+  AppBar,
+  IconButton,
+  Toolbar,
+  Collapse,
+  Typography,
+} from "@material-ui/core";
+import PetsIcon from "@material-ui/icons/Pets";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { Link as Scroll } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-    fontFamily: 'Nunito',
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100vh",
+    fontFamily: "Nunito",
   },
   appbar: {
-    background: 'none',
+    background: "none",
   },
   appbarWrapper: {
-    width: '80%',
-    margin: '0 auto',
+    width: "80%",
+    margin: "0 auto",
   },
   appbarTitle: {
-    flexGrow: '1',
-    color:'black'
+    flexGrow: "1",
+    color: "black",
   },
   icon: {
-    color: '#fff',
-    fontSize: '2rem',
+    color: "#fff",
+    fontSize: "2rem",
   },
   colorText: {
-    color: 'blue'
-    
+    color: "#2BB965",
   },
   container: {
-    textAlign: 'center',
+    textAlign: "center",
   },
   title: {
-    color: 'black',
-    fontSize: '4.5rem',
+    color: "black",
+    fontSize: "4.5rem",
   },
   goDown: {
-    color: '#5AFF3D',
-    fontSize: '4rem',
+    color: "#5AFF3D",
+    fontSize: "4rem",
+  },
+  body: {
+    fontSize: 20
+   
   },
 }));
 export default function Header() {
@@ -55,8 +64,9 @@ export default function Header() {
       <AppBar className={classes.appbar} elevation={0}>
         <Toolbar className={classes.appbarWrapper}>
           <h1 className={classes.appbarTitle}>
-            Futura<span className={classes.colorText}>Design.</span>
+            Pixel<span className={classes.colorText}>Alive.</span>
           </h1>
+
           <IconButton>
             <PetsIcon className={classes.icon} />
           </IconButton>
@@ -71,8 +81,13 @@ export default function Header() {
         <div className={classes.container}>
           <h1 className={classes.title}>
             Welcome to <br />
-            <span className={classes.colorText}>Futura.</span>
+            <span className={classes.colorText}>PixelAlive.</span>
           </h1>
+          <Typography className={classes.body} variant="body1">
+            En PixelAlive nos gusta crear páginas que llamen la atención,
+            ofrecemos menús para restaurantes o páginas personalizadas.
+          </Typography>
+
           <Scroll to="bears-gallery" smooth={true}>
             <IconButton>
               <ExpandMoreIcon className={classes.goDown} />
