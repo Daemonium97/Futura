@@ -26,7 +26,7 @@ export default function App() {
       <PlaceToVisit />
       <footer className={classes.footer}>
           <Typography variant="h6" align="center" gutterBottom>
-          <img src="https://img.icons8.com/nolan/30/email.png" alt=""/>Contact: daemonium97@gmail.com
+          <img src="https://img.icons8.com/nolan/30/email.png" alt=""/>Contact: pixelalive2021@gmail.com
             <br/>
             
             
