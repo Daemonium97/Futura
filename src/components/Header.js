@@ -50,7 +50,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "4rem",
   },
   para:{
-    fontFamily: "Nunito"
+    fontFamily: "Nunito",
+    
   }
 }));
 export default function Header() {
@@ -86,8 +87,11 @@ export default function Header() {
               <span className={classes.colorText}>PixelAlive.</span>
             </h1>
             <Typography className={classes.para} variant="h6" align="center" paragraph>
-              En PixelAlive nos gusta crear páginas que llamen la atención,
-              ofrecemos menús para restaurantes o páginas personalizadas.
+              En PixelAlive nos gusta crear páginas creativas,
+              ofrecemos menús para restaurantes o páginas personalizadas. Somos un equipo de trabajo conformado por un programador y una diseñadora gráfica.
+            </Typography>
+            <Typography className={classes.para} variant="h6" align="center" paragraph>
+              At PixelAlive we love to create cool websites, we offer menus for restaurants or custom websites. We're a team made by a developer and a graphic design.
             </Typography>
           </Grid>
 
